@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+header{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 0.5px lightgray;
+}
+
+.logo h1{
+font-size: 40px;
+color: white;
+font-weight: 800;
+text-transform: uppercase;
+position: relative;
+z-index: 1;
+}
+.logo span{
+    color: rgb(228, 228, 57);
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links li {
+    list-style: none;
+    margin: 0 10px;
+}
+.links li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.links a:hover{
+    color: rgb(228, 228, 57);
+}
+.Nav{
+    display: none;
+}
+.navClose, .navOpen{
+    font-size: 40px;
+    margin: 0 10px;
+    color: lightgray;
+    font-weight: bolder;
+    /*border: 1px solid lightgrey;*/
+    padding: 2px;
+    border-radius: 2px;
+}
+.navOpen:hover{
+    color: #fff;
+    transition: .5s;
+}
+.navClose:hover{
+    color: rgb(218, 45, 45);
+    transition: .5s;
+}
+
+
+@media (max-width:768px) {
+    .links {
+        display: block;
+        position: fixed;
+        left: -1000px;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        padding: 100px 20px 20px 20px;
+        background-color: black;
+    }
+    .links li{
+     margin: 20px 20px;
+    }
+    .Nav{
+        display: block;
+    }
+    .navClose{
+        display: none;
+    }
+}

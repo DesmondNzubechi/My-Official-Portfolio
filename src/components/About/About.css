@@ -1,0 +1,49 @@
+.about{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.description{
+    text-align: justify;
+    max-width: 500px;
+    padding: 10px 30px;
+}
+.description h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.description p{
+    font-size: 20px;
+    font-weight: ;
+}
+.contactLink{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: rgb(228, 228, 57);
+}
+.contactLink:hover{
+    transition: .5s;
+    color: black;
+    background: rgb(228, 228, 57);
+}
+.img img{
+    background:/* linear-gradient(black, black, rgb(228, 228, 57), black)*/ black;
+    border-radius: 50%;
+    box-shadow:  10px 10px 0 white,  -10px -10px 0 rgb(228, 228, 57);
+    padding:0;
+    margin: 10px;
+    max-width: 400px;
+    max-height: 400px;
+}
+.img img:hover{
+    transition: .5s;
+    background: rgb(228, 228, 57);
+    box-shadow:  10px 10px 0 white,  -10px -10px 0 black;
+}
